@@ -150,6 +150,13 @@ joint_model_list <- c(lin_model_list, glm_model_list)
 joint_AIC <- aictab(glm_model_list, glm_model_names)
 print (joint_AIC)
 
+# Model fit statistics
+
+# joint_RSq
+# joint_adj.RSq
+
+# joint_fit <- cbind(joint_AIC, joint_RSq, joint_adj.RSq)
+
 # Hypothesis testing ####
 # Use best regression to test for differences
 # Best regression is:
