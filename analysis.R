@@ -77,7 +77,7 @@ lin_GLI <- lm(Dorsal~Gape + Lake + Instar, data=full_data)
 glm_null <- glm(Dorsal~., family=gaussian(link = "log"), data=full_data)
 
 # GLM log-link regression, G
-glm_G <- glm(Dorsal~Gape, data=full_data)
+glm_G <- glm(Dorsal~Gape, family=gaussian(link = "log"), data=full_data)
 
 # GLM log-link regression, L
 glm_L <- glm(Dorsal~Lake, family=gaussian(link = "log"), data=full_data)
